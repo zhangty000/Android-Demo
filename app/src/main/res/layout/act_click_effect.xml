@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".widget.clickeffcect.ClickEffectAct">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:text="普通button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Btn波纹点击效果"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Tv波纹点击效果,需要设置点击事件"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="自定义效果"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="#ff0"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="自定义有界效果,背景黄色，波纹红色"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:background="@drawable/ripple_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="自定义有界效果,背景白色，波纹红色"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:background="@drawable/ripple_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="自定义有界效果,背景黄色带圆角，波纹红色"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:background="@drawable/ripple_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="自定义无界效果"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:background="@drawable/ripple_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ClickEffectAct"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+</FrameLayout>

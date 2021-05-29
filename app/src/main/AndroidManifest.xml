@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".widget.clickeffcect.ClickEffectAct"></activity>
+        <activity android:name=".drawable.DrawableAct" />
+        <activity android:name=".widget.cardview.CardViewAct" />
+        <activity
+            android:name=".setting.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".image.ImageFunction1Act" />
+        <activity android:name=".image.ImageMainAct" />
+        <activity android:name=".act.ActStackAct" />
+        <activity android:name=".widget.rv.RvTestAct" />
+        <activity android:name=".dialog.DialogAct" />
+        <activity android:name=".kotlin.xc.XcMainAct" />
+        <activity android:name=".net.LoadImageAct" />
+        <activity android:name=".text.ChildTextClickAct" />
+        <activity android:name=".text.TextSpaceAct" />
+        <activity android:name=".zhuan_chang.SecondTAAct" />
+        <activity android:name=".zhuan_chang.TransitionAnimationAct" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
